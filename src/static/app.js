@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <div class="participants">
             <strong>Participants:</strong>
-            <ul>${participantsList || "<li>No participants yet</li>"}</ul>
+            <ul>${details.participants.length > 0 ? participantsList : "<li>No participants yet</li>"}</ul>
           </div>
         `;
 
